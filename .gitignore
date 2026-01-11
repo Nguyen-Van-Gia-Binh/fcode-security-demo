@@ -1,0 +1,12 @@
+# Bỏ qua thư mục thư viện nặng
+node_modules/
+
+# Bỏ qua các file log hệ thống
+*.log
+
+# Bỏ qua file biến môi trường (nếu sau này bạn dùng .env)
+.env
+
+# Bỏ qua các file hệ thống của Mac/Windows
+.DS_Store
+Thumbs.db
