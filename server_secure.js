@@ -9,7 +9,7 @@ const client = new Client({
     user: 'postgres',
     host: 'localhost',
     database: 'fcode_demo', // Đảm bảo tên DB đúng
-    password: 'G@giabinh2006e',   // <--- HÃY SỬA MẬT KHẨU CỦA BẠN Ở ĐÂY
+    password: '',   // <--- HÃY SỬA MẬT KHẨU CỦA BẠN Ở ĐÂY
     port: 5432,
 });
 

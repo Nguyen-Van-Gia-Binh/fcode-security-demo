@@ -10,7 +10,7 @@ const client = new Client({
   user: "postgres",
   host: "localhost",
   database: "fcode_demo", // Mặc định là 'postgres' nếu bạn chưa tạo db riêng
-  password: "G@giabinh2006e", // <--- SỬA CÁI NÀY
+  password: "", 
   port: 5432,
 });
 
@@ -28,7 +28,7 @@ app.post("/login", async (req, res) => {
   // Code lỗi: Nối chuỗi trực tiếp, không dùng tham số hóa (Prepared Statement)
   const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
 
-  console.log("Câu lệnh SQL đang chạy: " + query); // In ra để xem hacker làm gì
+  console.log("Câu lệnh SQL đang chạy: " + query); 
 
   try {
     const result = await client.query(query);
@@ -59,4 +59,3 @@ app.post("/ssr", (req, res) => {
 app.listen(3000, () => {
   console.log("Server đang chạy tại http://localhost:3000");
 });
-q
